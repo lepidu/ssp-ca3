@@ -13,11 +13,12 @@ router.use(express.static(path.resolve(__dirname, 'views')));
 
 router.get('/', function (req, res) {
     res.writeHead(200, { 'Content-Type': 'text/html' });
+
     let xml = fs.readFileSync('MLtrading.xml', 'utf8'),
         xsl = fs.readFileSync('MLtrading.xsl', 'utf8');
-    let doc = xmlParse(xml),
-        stylesheet = xmlParse(xsl);
-    let result = xsltProcess(doc, stylesheet);
+        
+     console.log(xml);
+     console.log(xsl);
 
     res.end(result.toString());
 });
