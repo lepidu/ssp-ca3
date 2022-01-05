@@ -16,10 +16,15 @@ router.get('/', function (req, res) {
 
     let xml = fs.readFileSync('MLtrading.xml', 'utf8'),
         xsl = fs.readFileSync('MLtrading.xsl', 'utf8');
-        
-     console.log(xml);
-     console.log(xsl);
 
+    console.log(xml);
+    console.log(xsl);
+    let doc = xmlParse(xml),
+        stylesheet = xmlParse(xsl);
+    console.log(doc);
+    console.log(stylesheet);
+    let result = xsltProcess(doc, stylesheet);
+    console.log(result);
     res.end(result.toString());
 });
 
