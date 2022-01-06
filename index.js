@@ -1,3 +1,4 @@
+//Adapted taking as an example the work of Professor Mikhail Timofeev
 //Modules allows  and provide the functionalities in the Web Application
 const   http = require('http'), //This module provides the HTTP server functionalities
         path = require('path'), //The path module provides utilities for working with file and directory paths
@@ -65,7 +66,7 @@ router.post('/post/json', function (req, res) {
         XMLtoJSON('MLtrading.xml', function (err, result) {
             if (err) throw (err);
             
-            result.menu.category[obj.sec_n].package.push({'item': obj.item, 'price': obj.price,'time': obj.time});
+            result.menu.category[obj.sec_n].package.push({'item': obj.item, 'price': obj.price, 'desc': obj.desc, 'time': obj.time});
 
             console.log(JSON.stringify(result, null, "  "));
 

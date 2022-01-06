@@ -1,3 +1,6 @@
+//Bootstrap design, previously used for other subjects such as Cloud Computing
+//Table design was adapted from the work done in class by Professor Mikhail Timofeev
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,6 +26,7 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
   <link href="css/MLtrading.css" rel="stylesheet">
+  
 
 </head>
 
@@ -52,13 +56,12 @@
   </nav>
   <!--/ Nav End /-->
 
-  <!--/ Intro Skew Star /-->
+  <!--/ Intro Skew Start /-->
   <div id="home" class="intro route bg-image" style="background-image: url(img/intro-bg.png)">
     <div class="overlay-itro"></div>
     <div class="intro-content display-table">
       <div class="table-cell">
         <div class="container">
-          
           <h1 class="intro-title mb-4">ML Trading</h1>
           <p class="intro-subtitle"><span class="text-slider-items">Leisly Pino,Student Number 2020303,CCT College,Server-Side Programming,Mikhail Timofeev</span><strong class="text-slider"></strong></p>
         </div>
@@ -89,12 +92,12 @@
         <div class="col-md-4">
             
             <div class="service-content">
-              <h2 class="s-title">Web Design</h2>
+              <h2 class="s-title">Trading courses</h2>
               <p class="s-description text-center">
-                Leisly Pino. Student Number: 2020303. Lecturer: Mr. Michael Weiss.
+                Trading courses, where you will learn the tools to be a profitable trader:
               </p>
               <div id="results" class="col-lg-8 mb-5 order-2"></div>
-              <div id="menuTable" class="col-lg-4 mb-5 order-1">
+              <div id="menu" class="col-lg-4 mb-5 order-1">
                 <form enctype="application/json" action="/post/json" method="post">
                     <div class="form-group">
                         <select class="form-control" name="sec_n">
@@ -104,6 +107,7 @@
                         </select>
                         <input class="form-control mt-3" type="text" name="item" placeholder="Item">
                         <input class="form-control mt-3" type="text" name="price" placeholder="Price">
+                        <input class="form-control mt-3" type="text" name="desc" placeholder="Description">
                         <input class="form-control mt-3" type="text" name="time" placeholder="Time">
                         <div class="d-grid gap-2"><button type="submit" class="btn btn-primary btn-block mt-3">Submit</button></div>
                     </div>
@@ -112,12 +116,8 @@
                 <button id="delete" class="btn btn-danger btn-block mt-3">Delete</button></div>
                 <p class="text-muted text-center">To delete an entree, click the required row first</p>
             </div>
-
-
             </div>
-          
         </div>
-        
       </div>
     </div>
   </section>
@@ -158,6 +158,7 @@
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
   <script src="js/table.js"></script>
+  
 
 </body>
 </html>

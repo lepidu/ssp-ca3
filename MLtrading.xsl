@@ -1,3 +1,4 @@
+//Taking as reference the work done in class by Professor Mikhail Timofeev
 <?xml version="1.0"?> 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 <xsl:template match="/">
@@ -7,13 +8,14 @@
                 <th>Select</th>
                 <th>Package</th>
                 <th>Price</th>
+                <th>Description</th>
                 <th>Time</th>
             </tr>
         </thead>
         <tbody>
             <xsl:for-each select="//category">
                 <tr>
-                    <td colspan="4">
+                    <td colspan="5">
                         <xsl:value-of select="@name" />
                     </td>
                 </tr>
@@ -30,6 +32,9 @@
                         </td>
                         <td align="right">
                             <xsl:value-of select="price" />
+                        </td>
+                        <td align="right">
+                            <xsl:value-of select="desc" />
                         </td>
                         <td align="right">
                             <xsl:value-of select="time" />
