@@ -51,6 +51,12 @@
       <desc>Limited to 30 people</desc>
       <time>30 days</time>
     </package>
+    <package>
+      <item>Intensive</item>
+      <price>130</price>
+      <desc>Limited to 15 people</desc>
+      <time>180 min</time>
+    </package>
   </category>
   <category name="Synthetic">
     <package>
