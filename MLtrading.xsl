@@ -13,7 +13,7 @@
         <tbody>
             <xsl:for-each select="//category">
                 <tr>
-                    <td colspan="3">
+                    <td colspan="4">
                         <xsl:value-of select="@name" />
                     </td>
                 </tr>
@@ -30,9 +30,6 @@
                         </td>
                         <td align="right">
                             <xsl:value-of select="price" />
-                        </td>
-                        <td align="right">
-                            <xsl:value-of select="desc" />
                         </td>
                         <td align="right">
                             <xsl:value-of select="time" />

@@ -20,11 +20,11 @@ function draw_table()
 
 function select_row()
 {
-	$("#menuTable tbody tr[id]").click(function ()
+	$("#menu tbody tr[id]").click(function ()
 	{
 		$(".selected").removeClass("selected");
 		$(this).addClass("selected");
-		var section = $(this).prevAll("tr").children("td[colspan='2']").length - 1;
+		var section = $(this).prevAll("tr").children("td[colspan='5']").length - 1;
 		var entree = $(this).attr("id") - 1;
 		delete_row(section, entree);
 	})
@@ -40,8 +40,8 @@ function delete_row(sec, package)
 			type: "POST",
 			data:
 			{
-				section: sec,
-				entree: package
+				category: sec,
+				package: package
 			},
 			cache: false,
 			success: setTimeout(draw_table, 1000)

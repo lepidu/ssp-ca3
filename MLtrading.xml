@@ -1,81 +1,69 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <menu>
-	<category name="Binary">
-		<package>
-			<item>Beginners</item>
-			<price>50.00</price>
-			<desc></desc>
-			<time>220 min</time>
-		</package>
-		<package>
-			<item>Intermediate</item>
-			<price>70.00</price>
-			<desc></desc>
-			<time>360 min</time>
-		</package>
-		<package>
-			<item>Advanced</item>
-			<price>90.00</price>
-			<desc></desc>
-			<time>540 min</time>
-		</package>
-		<package signals="true">
-			<item>Trading Signals</item>
-			<price>40.00</price>
-			<desc></desc>
-			<time></time>
-		</package>
-	</category>
-	<category name="Forex">
-		<package>
-			<item>Beginners</item>
-			<price>50.00</price>
-			<desc></desc>
-			<time></time>
-		</package>
-		<package>
-			<item>Intermediate</item>
-			<price>70.00</price>
-			<desc></desc>
-			<time></time>
-		</package>
-		<package>
-			<item>Advanced</item>
-			<price>100.00</price>
-			<desc></desc>
-			<time></time>
-		</package>
-		<package signals="true">
-			<item>Trading Signals</item>
-			<price>60.00</price>
-			<desc></desc>
-			<time></time>
-		</package>
-	</category>
-	<category name="Synthetic">
-		<package>
-			<item>Beginners</item>
-			<price>60.00</price>
-			<desc></desc>
-			<time></time>
-		</package>
-		<package>
-			<item>Intermediate</item>
-			<price>80.00</price>
-			<desc></desc>
-			<time></time>
-		</package>
-		<package>
-			<item>Advanced</item>
-			<price>110.00</price>
-			<desc></desc>
-			<time></time>
-		</package>
-		<package signals="true">
-			<item>Trading Signals</item>
-			<price>60.00</price>
-			<desc></desc>
-			<time></time>
-		</package>
-	</category>
+  <category name="Binary">
+    <package>
+      <item>Beginners</item>
+      <price>50.00</price>
+      <time>220 min</time>
+    </package>
+    <package>
+      <item>Intermediate</item>
+      <price>70.00</price>
+      <time>360 min</time>
+    </package>
+    <package>
+      <item>Advanced</item>
+      <price>90.00</price>
+      <time>540 min</time>
+    </package>
+    <package signals="true">
+      <item>Trading Signals</item>
+      <price>40.00</price>
+      <time>30 days<time/>
+    </package>
+  </category>
+  <category name="Forex">
+    <package>
+      <item>Beginners</item>
+      <price>50.00</price>
+      <time>190 min<time/>
+    </package>
+    <package>
+      <item>Intermediate</item>
+      <price>70.00</price>
+      <time>240 min<time/>
+    </package>
+    <package>
+      <item>Advanced</item>
+      <price>100.00</price>
+      <time>370 min<time/>
+    </package>
+    <package signals="true">
+      <item>Trading Signals</item>
+      <price>60.00</price>
+      <time>30 days<time/>
+    </package>
+  </category>
+  <category name="Synthetic">
+    <package>
+      <item>Beginners</item>
+      <price>60.00</price>
+      <time>210 min<time/>
+    </package>
+    <package>
+      <item>Intermediate</item>
+      <price>80.00</price>
+      <time>210 min<time/>
+    </package>
+    <package>
+      <item>Advanced</item>
+      <price>110.00</price>
+      <time>420 min<time/>
+    </package>
+    <package signals="true">
+      <item>Trading Synthetic</item>
+      <price>60.00</price>
+      <time>30 days<time/>
+    </package>
+  </category>
 </menu>

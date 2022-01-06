@@ -65,7 +65,7 @@ router.post('/post/json', function (req, res) {
         XMLtoJSON('MLtrading.xml', function (err, result) {
             if (err) throw (err);
             
-            result.menu.section[obj.sec_n].entry.push({'item': obj.item, 'price': obj.price});
+            result.menu.category[obj.sec_n].package.push({'item': obj.item, 'price': obj.price,'time': obj.time});
 
             console.log(JSON.stringify(result, null, "  "));
 
@@ -90,7 +90,7 @@ router.post('/post/delete', function (req, res) {
         XMLtoJSON('MLtrading.xml', function (err, result) {
             if (err) throw (err);
             
-            delete result.menu.section[obj.section].entry[obj.entree];
+            delete result.menu.category[obj.category].package[obj.package];
 
             console.log(JSON.stringify(result, null, "  "));
 
