@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ML Trading</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+
+  <link href="img/favicon.png" rel="icon">
+
+  
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/MLtrading.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!--/ Nav Start /-->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="#page-top">ML Trading</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#service">Table</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Intro Skew Star /-->
+  <div id="home" class="intro route bg-image" style="background-image: url(img/intro-bg.png)">
+    <div class="overlay-itro"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          
+          <h1 class="intro-title mb-4">ML Trading</h1>
+          <p class="intro-subtitle"><span class="text-slider-items">Leisly Pino,Student Number 2020303,CCT College,Server-Side Programming,Mikhail Timofeev</span><strong class="text-slider"></strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Intro Skew End /-->
+
+  
+  <!--/ Section Services Start /-->
+  <section id="service" class="services-mf route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-box text-center">
+            <h3 class="title-a">
+              Continuous Assessment 3
+            </h3>
+            <p class="subtitle-a">
+              XML/JSON-based Node.js Web App
+            </p>
+            <div class="line-mf"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="service-box">
+            
+            <div class="service-content">
+              <h2 class="s-title">Web Design</h2>
+              <p class="s-description text-center">
+                Leisly Pino. Student Number: 2020303. Lecturer: Mr. Michael Weiss.
+              </p>
+              <div id="menu" class="col-lg-4 mb-5 order-1">
+                <form enctype="application/json" action="/post/json" method="post">
+                    <div class="form-group">
+                        <select class="form-control" name="sec_n">
+                            <option value="0">Bynary</option>
+                            <option value="1">Forex</option>
+                            <option value="2">Synthetic</option>
+                        </select>
+                        <input class="form-control mt-3" type="text" name="item" placeholder="Item">
+                        <input class="form-control mt-3" type="text" name="price" placeholder="Price">
+                        <input class="form-control mt-3" type="text" name="time" placeholder="Time">
+                        <div class="d-grid gap-2"><button type="submit" class="btn btn-primary btn-block mt-3">Submit</button></div>
+                    </div>
+                </form>
+                <div class="d-grid gap-2">
+                <button id="delete" class="btn btn-danger btn-block mt-3">Delete</button></div>
+                <p class="text-muted text-center">To delete an entree, click the required row first</p>
+            </div>
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="service-box">
+            <div class="service-content">
+            <div id="results" class="col-lg-8 mb-5 order-2"></div>
+            </div>
+          </div>
+        </div>
+        
+        
+        
+        
+      </div>
+    </div>
+  </section>
+  <!--/ Section Services End /-->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+              <div class="credits">
+                LEISLY PINO 2020303
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <!--/ Section Contact-footer End /-->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
